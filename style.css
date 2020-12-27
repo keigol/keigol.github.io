@@ -1,0 +1,53 @@
+body {
+    background: linear-gradient(90deg, #CCFFFF, #FFCCCC);
+    font-family: 'Open Sans', sans-serif;
+    width: 75%;
+    margin: auto;
+
+    display: flex;
+    flex-direction: column;
+    align-items: stretch;
+}
+
+main {
+    text-align: left;
+}
+
+nav {
+    height: 50px;
+    width: 33%;
+    margin-left: auto;
+    margin-right: 0;
+    display: flex;
+    align-items: flex-end;
+    justify-content: space-between;
+}
+
+#projects {
+    height: 100vh; /*DELETE*/
+}
+
+#projects h2 {
+    text-align: center;
+}
+
+#contact {
+    text-align: center;
+    margin-bottom: 50px;
+}
+
+#contact div {
+    width: 60%;
+    margin: auto;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+}
+
+a {
+    color: inherit;
+    text-decoration: inherit;
+}
+
+a:hover {
+    color: blue;
+}
