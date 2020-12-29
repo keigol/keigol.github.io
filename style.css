@@ -1,6 +1,6 @@
 body {
     background: linear-gradient(90deg, #CCFFFF, #FFCCCC);
-    font-family: 'Open Sans', sans-serif;
+    font-family: Inter, sans-serif;
     width: 75%;
     margin: auto;
 
@@ -23,12 +23,18 @@ nav {
     justify-content: space-between;
 }
 
-#projects {
-    height: 100vh; /*DELETE*/
-}
-
 #projects h2 {
     text-align: center;
+}
+
+#project-box {
+    margin: 50px 0px;
+    height: 100px; /*FOR NOW make responsive*/
+    border-style: solid;
+    border-radius: 5%;
+
+
+    display: flex;
 }
 
 #contact {
