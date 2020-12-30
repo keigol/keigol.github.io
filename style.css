@@ -28,7 +28,9 @@ h2 {
 }
 
 h1, h2 {
-    margin-bottom: 1em;
+    /* margin-bottom: 1em; */
+    margin-bottom: 48px;
+
 }
 
 nav {
@@ -44,19 +46,6 @@ nav {
 
 main {
     text-align: center;
-}
-
-.gradient-text {
-    display:inline-block;
-    background: #fe8c00;  /* fallback for old browsers */
-    background: -webkit-linear-gradient(to right, #f83600, #fe8c00);  /* Chrome 10-25, Safari 5.1-6 */
-    background: linear-gradient(to right, #f83600, #fe8c00); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
-
-    background-size: 100%;
-    -webkit-background-clip: text;
-    -moz-background-clip: text;
-    -webkit-text-fill-color: transparent; 
-    -moz-text-fill-color: transparent;
 }
 
 #projects h2 {
@@ -98,4 +87,27 @@ a {
 
 a:hover {
     color: blue;
+}
+
+.gradient-text {
+    transition: all 0.5s ease, 
+                background-position-x 0.4s ease-in-out,
+                transformation 0.4s ease-in-out;
+
+    display:inline-block;
+    background: #fe8c00;  /* fallback for old browsers */
+    background-image: linear-gradient(to right, #f83600, #fe8c00 50%,#2B59C3 50%,#253C78);
+    background-size: 200%;
+    background-position-y: left;
+    background-repeat: repeat;
+
+    -webkit-background-clip: text;
+    -moz-background-clip: text;
+    -webkit-text-fill-color: transparent; 
+    -moz-text-fill-color: transparent;
+}
+
+.gradient-text:hover{
+    background-position-x: right;
+    transform: scale(1.2);
 }
