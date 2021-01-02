@@ -48,7 +48,7 @@ main {
 }
 
 p {
-    margin-bottom: 1em;
+    margin-bottom: 2em;
 }
 
 #projects h2 {
@@ -57,17 +57,26 @@ p {
 
 .project-box {
     margin: 50px 0px;
-    padding:  60px 60px;
     background-color: white;
     box-shadow: 7px 7px 25px lightgray;
-
+    border-radius: 5px;
+    
     display: flex;
-    flex-direction: column;
+    flex-direction: row;
     align-items: flex-start;
+    justify-content: space-between;
 }
 
 .project-box:last-child {
     margin-bottom: 0px;
+}
+
+.project-content {
+    padding:  60px 60px;
+
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
 }
 
 .project-skills {
@@ -75,11 +84,29 @@ p {
 }
 
 .skill {
+    display: inline-block;
     padding: 8px;
     margin-right: 2em;
+
     border-style: solid;
     border-width: 2px;
-    border-color: #7f4600;
+    border-color: #30D2FF;
+    border-radius: 5px;
+}
+
+.project-image {
+    width: 250px;
+}
+
+.project-image:hover {
+    transition: transform 0.2s ease;
+    transform-origin: 80% 20%;
+    transform: scale(2.2);
+
+    border-style: solid;
+    border-width: 2px;
+    border-color: #30D2FF;
+    border-radius: 5px;
 }
 
 #contact {
@@ -105,7 +132,7 @@ a {
 }
 
 a:hover {
-    color: #7f4600;
+    color: #30D2FF;
     transform: translateY(-1px);
 }
 
@@ -150,7 +177,20 @@ a:hover {
         justify-content: space-around;
     }
 
-    #project-box {
+    .project-box {
+        display: flex;
+        flex-direction: column-reverse;
+    }
+
+    .project-content {
         padding: 20px 10px;
+    }
+
+    .project-image {
+        width: 100%;
+    }
+
+    .project-image:hover {
+        transform: unset;
     }
 }
