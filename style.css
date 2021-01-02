@@ -99,7 +99,7 @@ p {
 }
 
 .project-image:hover {
-    transition: transform 0.2s ease;
+    transition: transform 0.25s ease-out;
     transform-origin: 80% 20%;
     transform: scale(2.2);
 
