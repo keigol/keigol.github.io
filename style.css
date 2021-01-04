@@ -99,7 +99,7 @@ p {
 }
 
 .project-image:hover {
-    transition: transform 0.25s ease-out;
+    transition: transform 0.3s ease-out;
     transform-origin: 80% 20%;
     transform: scale(2.2);
 
@@ -192,5 +192,6 @@ a:hover {
 
     .project-image:hover {
         transform: unset;
+        border-style: none;
     }
 }
