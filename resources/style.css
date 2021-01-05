@@ -49,6 +49,7 @@ main {
 
 p {
     margin-bottom: 2em;
+    line-height: 1.5em;
 }
 
 #projects h2 {
@@ -102,7 +103,7 @@ p {
 .project-image:hover {
     transition: transform 0.3s ease-out;
     transform-origin: 80% 20%;
-    transform: scale(2.2);
+    transform: scale(2.4);
 
     box-sizing: border-box;
     border-style: solid;
@@ -136,6 +137,11 @@ a {
 a:hover {
     color: #30D2FF;
     transform: translateY(-1px);
+}
+
+p > a {
+    text-decoration: underline;
+    font-size: inherit;
 }
 
 .github-logo {
